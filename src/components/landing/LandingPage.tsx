@@ -456,6 +456,7 @@ function Contact() {
   const items = [
     { label: "GENERAL", value: "hello@striviotech.in", href: "mailto:hello@striviotech.in" },
     { label: "PARTNERSHIPS", value: "sponsor@striviotech.in", href: "mailto:sponsor@striviotech.in" },
+    { label: "LINKEDIN", value: "Strivio Tech", href: "https://www.linkedin.com/company/strivio-01/" },
     { label: "INSTAGRAM", value: "@strivio.tech", href: "https://instagram.com/strivio.tech" },
   ];
   return (
