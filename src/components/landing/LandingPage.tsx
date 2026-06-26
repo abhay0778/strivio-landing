@@ -427,6 +427,72 @@ function Story() {
   );
 }
 
+/* ---------- Team ---------- */
+function Team() {
+  const founders = [
+    {
+      initials: "AA",
+      bg: "#f5c518",
+      fg: "#000000",
+      name: "Abhay A Sharma",
+      role: "FOUNDER",
+      linkedinLabel: "Connect on Linkedin",
+      linkedinUrl: "https://linkedin.com/in/abhay-a-sharma",
+    },
+    {
+      initials: "SH",
+      bg: "#4ade80",
+      fg: "#000000",
+      name: "Sriram H S",
+      role: "CO-FOUNDER",
+      linkedinLabel: "Connect on LinkedIn",
+      linkedinUrl: "https://www.linkedin.com/in/sriramhs005?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    },
+  ];
+  return (
+    <section id="team" className="bg-black px-6 py-40">
+      <div className="mx-auto max-w-7xl">
+        <Reveal>
+          <p className="text-[10px] uppercase tracking-[0.4em] text-[#f5c518]">THE TEAM</p>
+        </Reveal>
+        <Reveal delay={0.1}>
+          <h2 className="mt-6 font-extrabold text-white text-[40px] md:text-[64px]" style={{ letterSpacing: "-0.03em", lineHeight: 1 }}>
+            Founders.
+          </h2>
+        </Reveal>
+
+        <div className="mt-16 grid gap-8 md:grid-cols-2">
+          {founders.map((f, i) => (
+            <Reveal key={f.initials} delay={i * 0.1}>
+              <div className="group rounded-2xl border border-[#1e1e1e] bg-[#0a0a0a] p-8 md:p-10 transition-all duration-300 hover:border-[rgba(245,197,24,0.3)] hover:-translate-y-1">
+                <div
+                  className="flex h-20 w-20 items-center justify-center rounded-xl text-[28px] font-bold transition-transform duration-300 group-hover:scale-105"
+                  style={{ backgroundColor: f.bg, color: f.fg, letterSpacing: "-0.02em" }}
+                >
+                  {f.initials}
+                </div>
+                <h3 className="mt-8 text-[24px] md:text-[28px] font-bold text-white" style={{ letterSpacing: "-0.02em" }}>
+                  {f.name}
+                </h3>
+                <p className="mt-2 text-[11px] uppercase tracking-[0.3em] text-[#888888]">{f.role}</p>
+                <a
+                  href={f.linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-8 inline-flex items-center gap-2 text-[13px] uppercase tracking-[0.2em] text-[#f5c518] transition-opacity hover:opacity-80"
+                  data-cursor="link"
+                >
+                  {f.linkedinLabel} <ArrowRight strokeWidth={ICON_STROKE} size={14} />
+                </a>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ---------- Manifesto ---------- */
 function Manifesto() {
   return (
