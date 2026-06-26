@@ -419,7 +419,7 @@ function Story() {
           <div className="space-y-6 text-[16px] text-[#888888]" style={{ lineHeight: 1.8 }}>
             <p>Strivio Tech is a SaaS company building focused software products that solve high friction problems across industries in India and beyond.</p>
             <p>We don't build everything. We identify one real problem in an industry, build the most focused solution possible, and scale it before moving to the next.</p>
-            <p>Our approach is simple — find where existing software fails real people, build what actually works, and keep it that way.</p>
+            <p>Our approach is simple. Find where existing software fails real people, build what actually works, and keep it that way.</p>
           </div>
         </Reveal>
       </div>
