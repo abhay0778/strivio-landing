@@ -289,7 +289,7 @@ function Mission() {
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="mx-auto mt-8 max-w-[800px] text-center font-bold text-white text-[28px] md:text-[48px]" style={{ lineHeight: 1.15, letterSpacing: "-0.02em" }}>
-            We exist to build focused SaaS products that solve real industry problems — from education to enterprise.
+            We exist to build focused SaaS products that solve real industry problems, from education to enterprise.
           </h2>
         </Reveal>
 
