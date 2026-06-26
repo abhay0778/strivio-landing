@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { motion, useInView, useMotionValue, useSpring, useScroll, useTransform, animate } from "framer-motion";
+import { motion, useInView, useMotionValue, useSpring, animate } from "framer-motion";
 import { ArrowRight, Menu, X, ArrowDown } from "lucide-react";
 
 const ICON_STROKE = 1.5;
