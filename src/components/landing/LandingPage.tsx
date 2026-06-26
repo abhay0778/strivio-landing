@@ -162,7 +162,7 @@ function Hero() {
         transition={{ duration: 0.6, delay: 0.4 }}
         className="mb-10 rounded-full border border-[#2e2e2e] bg-[#111000] px-4 py-1.5"
       >
-        <span className="text-[11px] uppercase tracking-[0.25em] text-[#888888]">
+        <span className="text-[11px] uppercase tracking-[0.25em] text-[#b5b5b5]">
           BENGALURU, INDIA · EST. 2025
         </span>
       </motion.div>
@@ -194,7 +194,7 @@ function Hero() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.0 }}
-        className="mt-8 max-w-[480px] text-center text-[18px] text-[#888888]"
+        className="mt-8 max-w-[480px] text-center text-[18px] text-[#b5b5b5]"
       >
         We build SaaS products that solve real problems across industries.
       </motion.p>
@@ -224,8 +224,8 @@ function Hero() {
       <div className="absolute bottom-0 left-0 right-0">
         <div className="h-px w-full bg-[#1e1e1e]" />
         <div className="flex flex-col items-center gap-2 py-5">
-          <span className="text-[10px] uppercase tracking-[0.4em] text-[#444444]">SCROLL TO EXPLORE</span>
-          <div className="bounce-slow text-[#444444]">
+          <span className="text-[10px] uppercase tracking-[0.4em] text-[#9a9a9a]">SCROLL TO EXPLORE</span>
+          <div className="bounce-slow text-[#9a9a9a]">
             <ArrowDown strokeWidth={ICON_STROKE} size={14} />
           </div>
         </div>
@@ -241,7 +241,7 @@ function Marquee() {
     <div key={key} className="flex shrink-0 items-center gap-10 px-5">
       {items.map((t, i) => (
         <div key={i} className="flex items-center gap-10">
-          <span className="text-[13px] uppercase tracking-[0.3em] text-[#444444]">{t}</span>
+          <span className="text-[13px] uppercase tracking-[0.3em] text-[#9a9a9a]">{t}</span>
           <span className="text-[10px] text-[#f5c518]">◆</span>
         </div>
       ))}
@@ -299,7 +299,7 @@ function Mission() {
               <div>
                 <div className="h-0.5 w-10 bg-[#f5c518]" />
                 <h3 className="mt-6 text-[18px] font-semibold text-white">{v.title}</h3>
-                <p className="mt-3 text-[14px] text-[#888888]" style={{ lineHeight: 1.6 }}>{v.body}</p>
+                <p className="mt-3 text-[14px] text-[#b5b5b5]" style={{ lineHeight: 1.6 }}>{v.body}</p>
               </div>
             </Reveal>
           ))}
@@ -343,7 +343,7 @@ function Numbers() {
               <div className="text-[56px] font-extrabold text-white" style={{ letterSpacing: "-0.04em", lineHeight: 1 }}>
                 {s.kind === "count" ? <CountStat to={s.value as number} /> : (s.value as string)}
               </div>
-              <div className="mt-2 text-[13px] tracking-[0.08em] text-[#888888]">{s.label}</div>
+              <div className="mt-2 text-[13px] tracking-[0.08em] text-[#b5b5b5]">{s.label}</div>
             </div>
           </Reveal>
         ))}
@@ -375,7 +375,7 @@ function Products() {
               <h3 className="mt-6 text-[28px] md:text-[36px] font-bold text-white" style={{ letterSpacing: "-0.02em", lineHeight: 1.1 }}>
                 Something is being built.
               </h3>
-              <p className="mt-6 text-[16px] text-[#888888]" style={{ lineHeight: 1.7 }}>
+              <p className="mt-6 text-[16px] text-[#b5b5b5]" style={{ lineHeight: 1.7 }}>
                 Something focused. Something real. Details when it is ready.
               </p>
               <button
@@ -416,7 +416,7 @@ function Story() {
           </h2>
         </Reveal>
         <Reveal delay={0.15}>
-          <div className="space-y-6 text-[16px] text-[#888888]" style={{ lineHeight: 1.8 }}>
+          <div className="space-y-6 text-[16px] text-[#b5b5b5]" style={{ lineHeight: 1.8 }}>
             <p>Strivio Tech is a SaaS company building focused software products that solve high friction problems across industries in India and beyond.</p>
             <p>We don't build everything. We identify one real problem in an industry, build the most focused solution possible, and scale it before moving to the next.</p>
             <p>Our approach is simple. Find where existing software fails real people, build what actually works, and keep it that way.</p>
@@ -474,7 +474,7 @@ function Team() {
                 <h3 className="mt-8 text-[24px] md:text-[28px] font-bold text-white" style={{ letterSpacing: "-0.02em" }}>
                   {f.name}
                 </h3>
-                <p className="mt-2 text-[11px] uppercase tracking-[0.3em] text-[#888888]">{f.role}</p>
+                <p className="mt-2 text-[11px] uppercase tracking-[0.3em] text-[#b5b5b5]">{f.role}</p>
                 <a
                   href={f.linkedinUrl}
                   target="_blank"
@@ -510,7 +510,7 @@ function Manifesto() {
           </p>
         </Reveal>
         <Reveal delay={0.15}>
-          <p className="mt-10 text-[13px] uppercase tracking-[0.2em] text-[#444444]">Strivio Tech, 2025</p>
+          <p className="mt-10 text-[13px] uppercase tracking-[0.2em] text-[#9a9a9a]">Strivio Tech, 2025</p>
         </Reveal>
       </div>
     </section>
@@ -541,7 +541,7 @@ function Contact() {
           {items.map((it, i) => (
             <Reveal key={it.label} delay={i * 0.08}>
               <div>
-                <p className="text-[10px] uppercase tracking-[0.3em] text-[#444444]">{it.label}</p>
+                <p className="text-[10px] uppercase tracking-[0.3em] text-[#9a9a9a]">{it.label}</p>
                 <a
                   href={it.href}
                   className="mt-3 block text-[16px] text-white transition-colors duration-200 hover:text-[#f5c518]"
@@ -563,9 +563,9 @@ function Footer() {
   return (
     <footer className="border-t border-[#1e1e1e] bg-black px-6 py-10">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 md:flex-row">
-        <span className="text-[12px] uppercase tracking-[0.25em] text-[#444444]">STRIVIO TECH</span>
-        <span className="text-[12px] text-[#444444]">© 2025 Strivio Tech. All rights reserved.</span>
-        <span className="text-[12px] text-[#444444]">Bengaluru, India</span>
+        <span className="text-[12px] uppercase tracking-[0.25em] text-[#9a9a9a]">STRIVIO TECH</span>
+        <span className="text-[12px] text-[#9a9a9a]">© 2025 Strivio Tech. All rights reserved.</span>
+        <span className="text-[12px] text-[#9a9a9a]">Bengaluru, India</span>
       </div>
     </footer>
   );
