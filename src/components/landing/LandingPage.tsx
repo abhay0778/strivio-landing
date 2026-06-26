@@ -76,7 +76,7 @@ function Nav() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
           <button onClick={() => scrollTo("hero")} className="flex items-center gap-2" data-cursor="link">
-            <span className="text-[18px] font-bold tracking-[0.25em] text-white">STRIVIO</span>
+            <span className="text-[18px] font-bold tracking-[0.25em] text-white">STRIVIO TECH</span>
             <span className="block h-1.5 w-1.5 bg-[#f5c518]" />
           </button>
 
