@@ -599,6 +599,7 @@ export default function LandingPage() {
       <Numbers />
       <Products />
       <Story />
+      <Team />
       <Manifesto />
       <Contact />
       <Footer />
