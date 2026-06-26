@@ -444,7 +444,7 @@ function Manifesto() {
           </p>
         </Reveal>
         <Reveal delay={0.15}>
-          <p className="mt-10 text-[13px] uppercase tracking-[0.2em] text-[#444444]">— Strivio Tech, 2025</p>
+          <p className="mt-10 text-[13px] uppercase tracking-[0.2em] text-[#444444]">Strivio Tech, 2025</p>
         </Reveal>
       </div>
     </section>
