@@ -371,7 +371,7 @@ function Products() {
             className="mt-16 grid gap-10 rounded-2xl border border-[#1e1e1e] bg-[#111000] p-8 transition-colors duration-[400ms] hover:border-[rgba(245,197,24,0.3)] md:grid-cols-2 md:p-[60px]"
           >
             <div>
-              <p className="text-[10px] uppercase tracking-[0.3em] text-[#f5c518]">001 — COMING SOON</p>
+              <p className="text-[10px] uppercase tracking-[0.3em] text-[#f5c518]">001 · COMING SOON</p>
               <h3 className="mt-6 text-[28px] md:text-[36px] font-bold text-white" style={{ letterSpacing: "-0.02em", lineHeight: 1.1 }}>
                 Something is being built.
               </h3>
