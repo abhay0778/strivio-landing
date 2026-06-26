@@ -76,7 +76,7 @@ function Nav() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
           <button onClick={() => scrollTo("hero")} className="flex items-center gap-2" data-cursor="link">
-            <span className="text-[18px] font-bold tracking-[0.25em] text-white">STRIVIO</span>
+            <span className="text-[18px] font-bold tracking-[0.25em] text-white">STRIVIO TECH</span>
             <span className="block h-1.5 w-1.5 bg-[#f5c518]" />
           </button>
 
@@ -289,7 +289,7 @@ function Mission() {
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="mx-auto mt-8 max-w-[800px] text-center font-bold text-white text-[28px] md:text-[48px]" style={{ lineHeight: 1.15, letterSpacing: "-0.02em" }}>
-            We exist to build focused SaaS products that solve real industry problems — from education to enterprise.
+            We exist to build focused SaaS products that solve real industry problems, from education to enterprise.
           </h2>
         </Reveal>
 
@@ -371,7 +371,7 @@ function Products() {
             className="mt-16 grid gap-10 rounded-2xl border border-[#1e1e1e] bg-[#111000] p-8 transition-colors duration-[400ms] hover:border-[rgba(245,197,24,0.3)] md:grid-cols-2 md:p-[60px]"
           >
             <div>
-              <p className="text-[10px] uppercase tracking-[0.3em] text-[#f5c518]">001 — COMING SOON</p>
+              <p className="text-[10px] uppercase tracking-[0.3em] text-[#f5c518]">001 · COMING SOON</p>
               <h3 className="mt-6 text-[28px] md:text-[36px] font-bold text-white" style={{ letterSpacing: "-0.02em", lineHeight: 1.1 }}>
                 Something is being built.
               </h3>
@@ -419,7 +419,7 @@ function Story() {
           <div className="space-y-6 text-[16px] text-[#888888]" style={{ lineHeight: 1.8 }}>
             <p>Strivio Tech is a SaaS company building focused software products that solve high friction problems across industries in India and beyond.</p>
             <p>We don't build everything. We identify one real problem in an industry, build the most focused solution possible, and scale it before moving to the next.</p>
-            <p>Our approach is simple — find where existing software fails real people, build what actually works, and keep it that way.</p>
+            <p>Our approach is simple. Find where existing software fails real people, build what actually works, and keep it that way.</p>
           </div>
         </Reveal>
       </div>
@@ -444,7 +444,7 @@ function Manifesto() {
           </p>
         </Reveal>
         <Reveal delay={0.15}>
-          <p className="mt-10 text-[13px] uppercase tracking-[0.2em] text-[#444444]">— Strivio Tech, 2025</p>
+          <p className="mt-10 text-[13px] uppercase tracking-[0.2em] text-[#444444]">Strivio Tech, 2025</p>
         </Reveal>
       </div>
     </section>
@@ -456,6 +456,7 @@ function Contact() {
   const items = [
     { label: "GENERAL", value: "hello@striviotech.in", href: "mailto:hello@striviotech.in" },
     { label: "PARTNERSHIPS", value: "sponsor@striviotech.in", href: "mailto:sponsor@striviotech.in" },
+    { label: "LINKEDIN", value: "Strivio Tech", href: "https://www.linkedin.com/company/strivio-01/" },
     { label: "INSTAGRAM", value: "@strivio.tech", href: "https://instagram.com/strivio.tech" },
   ];
   return (
