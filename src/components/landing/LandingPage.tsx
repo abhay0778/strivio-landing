@@ -92,11 +92,11 @@ function Nav() {
               </button>
             ))}
             <a
-              href="mailto:hello@striviotech.in"
+              href="mailto:contact.striviotech@gmail.com"
               className="rounded border border-[#f5c518] px-4 py-2 text-[12px] uppercase tracking-[0.15em] text-[#f5c518] transition-colors duration-200 hover:bg-[#f5c518] hover:text-black"
               data-cursor="btn"
             >
-              hello@striviotech.in
+              contact.striviotech@gmail.com
             </a>
           </div>
 
@@ -136,10 +136,10 @@ function Nav() {
               </button>
             ))}
             <a
-              href="mailto:hello@striviotech.in"
+              href="mailto:contact.striviotech@gmail.com"
               className="mt-4 text-[16px] uppercase tracking-[0.15em] text-[#f5c518]"
             >
-              hello@striviotech.in
+              contact.striviotech@gmail.com
             </a>
           </div>
         </motion.div>
@@ -520,7 +520,7 @@ function Manifesto() {
 /* ---------- Contact ---------- */
 function Contact() {
   const items = [
-    { label: "GENERAL", value: "hello@striviotech.in", href: "mailto:hello@striviotech.in" },
+    { label: "GENERAL", value: "contact.striviotech@gmail.com", href: "mailto:contact.striviotech@gmail.com" },
     { label: "PARTNERSHIPS", value: "sponsor@striviotech.in", href: "mailto:sponsor@striviotech.in" },
     { label: "LINKEDIN", value: "Strivio Tech", href: "https://www.linkedin.com/company/strivio-01/" },
     { label: "INSTAGRAM", value: "@strivio.tech", href: "https://instagram.com/strivio.tech" },
