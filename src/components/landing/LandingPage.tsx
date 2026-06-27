@@ -128,12 +128,6 @@ function Nav() {
                 {l.label}
               </button>
             ))}
-            <a
-              href="mailto:contact.striviotech@gmail.com"
-              className="mt-4 text-[16px] uppercase tracking-[0.15em] text-[#f5c518]"
-            >
-              contact.striviotech@gmail.com
-            </a>
           </div>
         </motion.div>
       )}
