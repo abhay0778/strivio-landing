@@ -520,8 +520,7 @@ function Manifesto() {
 /* ---------- Contact ---------- */
 function Contact() {
   const items = [
-    { label: "GENERAL", value: "contact.striviotech@gmail.com", href: "mailto:contact.striviotech@gmail.com" },
-    { label: "PARTNERSHIPS", value: "sponsor@striviotech.in", href: "mailto:sponsor@striviotech.in" },
+    { label: "FOR BUSINESS QUERIES", value: "contact.striviotech@gmail.com", href: "mailto:contact.striviotech@gmail.com" },
     { label: "LINKEDIN", value: "Strivio Tech", href: "https://www.linkedin.com/company/strivio-01/" },
     { label: "INSTAGRAM", value: "@strivio.tech", href: "https://instagram.com/strivio.tech" },
   ];
