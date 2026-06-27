@@ -91,13 +91,6 @@ function Nav() {
                 {l.label}
               </button>
             ))}
-            <a
-              href="mailto:contact.striviotech@gmail.com"
-              className="rounded border border-[#f5c518] px-4 py-2 text-[12px] uppercase tracking-[0.15em] text-[#f5c518] transition-colors duration-200 hover:bg-[#f5c518] hover:text-black"
-              data-cursor="btn"
-            >
-              contact.striviotech@gmail.com
-            </a>
           </div>
 
           <button
@@ -135,12 +128,6 @@ function Nav() {
                 {l.label}
               </button>
             ))}
-            <a
-              href="mailto:contact.striviotech@gmail.com"
-              className="mt-4 text-[16px] uppercase tracking-[0.15em] text-[#f5c518]"
-            >
-              contact.striviotech@gmail.com
-            </a>
           </div>
         </motion.div>
       )}
