@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView, useMotionValue, useSpring, animate } from "framer-motion";
 import { ArrowRight, Menu, X, ArrowDown } from "lucide-react";
+import founderAbhay from "@/assets/founder-abhay.png";
+import founderSriram from "@/assets/founder-sriram.png";
 
 const ICON_STROKE = 1.5;
 
@@ -418,22 +420,20 @@ function Story() {
 function Team() {
   const founders = [
     {
-      initials: "AA",
-      bg: "#f5c518",
-      fg: "#000000",
+      photo: founderAbhay,
       name: "Abhay A Sharma",
       role: "FOUNDER",
       linkedinLabel: "Connect on Linkedin",
       linkedinUrl: "https://linkedin.com/in/abhay-a-sharma",
+      objectPosition: "center top",
     },
     {
-      initials: "SH",
-      bg: "#4ade80",
-      fg: "#000000",
+      photo: founderSriram,
       name: "Sriram H S",
       role: "CO-FOUNDER",
       linkedinLabel: "Connect on LinkedIn",
       linkedinUrl: "https://www.linkedin.com/in/sriramhs005?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      objectPosition: "center top",
     },
   ];
   return (
@@ -448,29 +448,44 @@ function Team() {
           </h2>
         </Reveal>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2">
+        <div className="mt-24 grid gap-y-24 gap-x-16 md:grid-cols-2 md:gap-x-24">
           {founders.map((f, i) => (
-            <Reveal key={f.initials} delay={i * 0.1}>
-              <div className="group rounded-2xl border border-[#1e1e1e] bg-[#0a0a0a] p-8 md:p-10 transition-all duration-300 hover:border-[rgba(245,197,24,0.3)] hover:-translate-y-1">
-                <div
-                  className="flex h-20 w-20 items-center justify-center rounded-xl text-[28px] font-bold transition-transform duration-300 group-hover:scale-105"
-                  style={{ backgroundColor: f.bg, color: f.fg, letterSpacing: "-0.02em" }}
-                >
-                  {f.initials}
+            <Reveal key={f.name} delay={i * 0.1}>
+              <div
+                className="founder-card group relative rounded-2xl border border-[#1e1e1e] bg-[#0a0a0a] pl-[44%] pr-8 py-10 md:pl-[46%] md:pr-10 md:py-12 transition-all duration-300 hover:border-[rgba(245,197,24,0.35)] hover:-translate-y-1"
+                style={{ overflow: "visible" }}
+              >
+                <div className="founder-photo pointer-events-none absolute left-0 bottom-0 top-0 w-[60%] -translate-x-[42%] flex items-end justify-center transition-transform duration-500 group-hover:-translate-y-2">
+                  <div
+                    className="absolute inset-x-6 bottom-2 h-10 rounded-full"
+                    style={{ background: "radial-gradient(ellipse at center, rgba(0,0,0,0.7), transparent 70%)", filter: "blur(12px)" }}
+                  />
+                  <img
+                    src={f.photo}
+                    alt={f.name}
+                    className="relative h-full w-full object-contain"
+                    style={{
+                      objectPosition: f.objectPosition,
+                      filter: "drop-shadow(0 30px 40px rgba(0,0,0,0.6)) drop-shadow(0 0 60px rgba(245,197,24,0.08))",
+                    }}
+                  />
                 </div>
-                <h3 className="mt-8 text-[24px] md:text-[28px] font-bold text-white" style={{ letterSpacing: "-0.02em" }}>
-                  {f.name}
-                </h3>
-                <p className="mt-2 text-[11px] uppercase tracking-[0.3em] text-[#b5b5b5]">{f.role}</p>
-                <a
-                  href={f.linkedinUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-8 inline-flex items-center gap-2 text-[13px] uppercase tracking-[0.2em] text-[#f5c518] transition-opacity hover:opacity-80"
-                  data-cursor="link"
-                >
-                  {f.linkedinLabel} <ArrowRight strokeWidth={ICON_STROKE} size={14} />
-                </a>
+
+                <div className="min-h-[260px] flex flex-col justify-center">
+                  <p className="text-[10px] uppercase tracking-[0.3em] text-[#f5c518]">{f.role}</p>
+                  <h3 className="mt-3 text-[24px] md:text-[30px] font-bold text-white" style={{ letterSpacing: "-0.02em", lineHeight: 1.1 }}>
+                    {f.name}
+                  </h3>
+                  <a
+                    href={f.linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-flex items-center gap-2 text-[13px] uppercase tracking-[0.2em] text-[#f5c518] transition-opacity hover:opacity-80"
+                    data-cursor="link"
+                  >
+                    {f.linkedinLabel} <ArrowRight strokeWidth={ICON_STROKE} size={14} />
+                  </a>
+                </div>
               </div>
             </Reveal>
           ))}
