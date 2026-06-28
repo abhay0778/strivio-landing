@@ -424,7 +424,7 @@ function Team() {
       name: "Abhay A Sharma",
       role: "FOUNDER",
       linkedinLabel: "Connect on Linkedin",
-      linkedinUrl: "https://linkedin.com/in/abhay-a-sharma",
+      linkedinUrl: "https://www.linkedin.com/in/abhay-a-sharma-6b8a1428b",
       objectPosition: "center top",
     },
     {
