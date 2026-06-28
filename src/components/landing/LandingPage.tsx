@@ -426,7 +426,7 @@ function Team() {
       linkedinLabel: "Connect on Linkedin",
       linkedinUrl: "https://www.linkedin.com/in/abhay-a-sharma-6b8a1428b",
       objectPosition: "center top",
-      imageScale: 1,
+      imageScale: 1.06,
     },
     {
       photo: founderSriram,
