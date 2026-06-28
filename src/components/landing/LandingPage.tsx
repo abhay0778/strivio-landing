@@ -426,6 +426,7 @@ function Team() {
       linkedinLabel: "Connect on Linkedin",
       linkedinUrl: "https://www.linkedin.com/in/abhay-a-sharma-6b8a1428b",
       objectPosition: "center top",
+      imageScale: 1,
     },
     {
       photo: founderSriram,
@@ -434,6 +435,7 @@ function Team() {
       linkedinLabel: "Connect on LinkedIn",
       linkedinUrl: "https://www.linkedin.com/in/sriramhs005?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       objectPosition: "center top",
+      imageScale: 0.84,
     },
   ];
   return (
@@ -466,6 +468,8 @@ function Team() {
                     className="relative h-full w-full object-contain"
                     style={{
                       objectPosition: f.objectPosition,
+                      transform: `scale(${f.imageScale})`,
+                      transformOrigin: "bottom center",
                       filter: "drop-shadow(0 30px 40px rgba(0,0,0,0.6)) drop-shadow(0 0 60px rgba(245,197,24,0.08))",
                     }}
                   />
