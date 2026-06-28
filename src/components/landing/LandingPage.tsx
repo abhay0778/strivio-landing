@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView, useMotionValue, useSpring, animate } from "framer-motion";
 import { ArrowRight, Menu, X, ArrowDown } from "lucide-react";
+import founderAbhay from "@/assets/founder-abhay.png";
+import founderSriram from "@/assets/founder-sriram.png";
 
 const ICON_STROKE = 1.5;
 
