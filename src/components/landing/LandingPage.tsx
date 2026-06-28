@@ -452,10 +452,10 @@ function Team() {
           {founders.map((f, i) => (
             <Reveal key={f.name} delay={i * 0.1}>
               <div
-                className="founder-card group relative rounded-2xl border border-[#1e1e1e] bg-[#0a0a0a] pl-[44%] pr-8 py-10 md:pl-[46%] md:pr-10 md:py-12 transition-all duration-300 hover:border-[rgba(245,197,24,0.35)] hover:-translate-y-1"
+                className="founder-card group relative rounded-2xl border border-[#1e1e1e] bg-[#0a0a0a] pl-[40%] pr-8 py-10 md:pl-[42%] md:pr-10 md:py-12 transition-all duration-300 hover:border-[rgba(245,197,24,0.35)] hover:-translate-y-1"
                 style={{ overflow: "visible" }}
               >
-                <div className="founder-photo pointer-events-none absolute left-0 bottom-0 top-0 w-[60%] -translate-x-[42%] flex items-end justify-center transition-transform duration-500 group-hover:-translate-y-2">
+                <div className="founder-photo pointer-events-none absolute left-0 bottom-0 h-[340px] w-[220px] md:h-[420px] md:w-[280px] -translate-x-[40%] flex items-end justify-center transition-transform duration-500 group-hover:-translate-y-2">
                   <div
                     className="absolute inset-x-6 bottom-2 h-10 rounded-full"
                     style={{ background: "radial-gradient(ellipse at center, rgba(0,0,0,0.7), transparent 70%)", filter: "blur(12px)" }}
