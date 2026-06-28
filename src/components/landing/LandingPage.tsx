@@ -435,7 +435,7 @@ function Team() {
       linkedinLabel: "Connect on LinkedIn",
       linkedinUrl: "https://www.linkedin.com/in/sriramhs005?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       objectPosition: "center top",
-      imageScale: 0.84,
+      imageScale: 0.94,
     },
   ];
   return (
