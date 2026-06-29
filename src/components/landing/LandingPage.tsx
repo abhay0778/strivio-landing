@@ -450,15 +450,14 @@ function Team() {
           </h2>
         </Reveal>
 
-        <div className="mt-24 grid gap-y-24 gap-x-16 md:grid-cols-2 md:gap-x-24">
+        <div className="mt-24 grid gap-y-16 gap-x-16 md:grid-cols-2 md:gap-y-24 md:gap-x-24">
           {founders.map((f, i) => (
             <Reveal key={f.name} delay={i * 0.1}>
               <div
-                className="founder-card group relative rounded-2xl border border-[#1e1e1e] bg-[#0a0a0a] px-6 pt-8 pb-10 md:pl-[42%] md:pr-10 md:py-12 transition-all duration-300 hover:border-[rgba(245,197,24,0.35)] hover:-translate-y-1"
+                className="founder-card group relative rounded-2xl border border-[#1e1e1e] bg-[#0a0a0a] py-10 pl-[48%] pr-5 md:pl-[42%] md:pr-10 md:py-12 transition-all duration-300 hover:border-[rgba(245,197,24,0.35)] hover:-translate-y-1"
                 style={{ overflow: "visible" }}
               >
-                {/* Mobile: stacked photo on top */}
-                <div className="founder-photo md:hidden relative mx-auto h-[360px] w-full max-w-[280px] flex items-end justify-center transition-transform duration-500 group-hover:-translate-y-2">
+                <div className="founder-photo pointer-events-none absolute left-0 bottom-0 flex h-[250px] w-[150px] translate-x-[-8%] items-end justify-center transition-transform duration-500 group-hover:-translate-y-2 md:h-[420px] md:w-[280px] md:-translate-x-[40%]">
                   <div
                     className="absolute inset-x-6 bottom-2 h-10 rounded-full"
                     style={{ background: "radial-gradient(ellipse at center, rgba(0,0,0,0.7), transparent 70%)", filter: "blur(12px)" }}
@@ -476,26 +475,7 @@ function Team() {
                   />
                 </div>
 
-                {/* Desktop: overlapping photo on left */}
-                <div className="founder-photo pointer-events-none hidden md:flex absolute left-0 bottom-0 h-[420px] w-[280px] -translate-x-[40%] items-end justify-center transition-transform duration-500 group-hover:-translate-y-2">
-                  <div
-                    className="absolute inset-x-6 bottom-2 h-10 rounded-full"
-                    style={{ background: "radial-gradient(ellipse at center, rgba(0,0,0,0.7), transparent 70%)", filter: "blur(12px)" }}
-                  />
-                  <img
-                    src={f.photo}
-                    alt={f.name}
-                    className="relative h-full w-full object-contain"
-                    style={{
-                      objectPosition: f.objectPosition,
-                      transform: `scale(${f.imageScale})`,
-                      transformOrigin: "bottom center",
-                      filter: "drop-shadow(0 30px 40px rgba(0,0,0,0.6)) drop-shadow(0 0 60px rgba(245,197,24,0.08))",
-                    }}
-                  />
-                </div>
-
-                <div className="mt-8 md:mt-0 md:min-h-[260px] flex flex-col justify-center">
+                <div className="flex min-h-[190px] flex-col justify-center md:min-h-[260px]">
                   <p className="text-[10px] uppercase tracking-[0.3em] text-[#f5c518]">{f.role}</p>
                   <h3 className="mt-3 text-[24px] md:text-[30px] font-bold text-white" style={{ letterSpacing: "-0.02em", lineHeight: 1.1 }}>
                     {f.name}
